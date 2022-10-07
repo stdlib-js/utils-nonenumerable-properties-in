@@ -92,11 +92,7 @@ var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
 var Symbol = require( '@stdlib/symbol-ctor' );
 var nonEnumerablePropertiesIn = require( '@stdlib/utils-nonenumerable-properties-in' );
 
-var hasSymbols;
-var props;
-var obj;
-
-hasSymbols = hasSymbolSupport();
+var hasSymbols = hasSymbolSupport();
 
 function Foo() {
     this.a = 'a';
@@ -135,11 +131,9 @@ if ( hasSymbols ) {
     });
 }
 
-obj = new Foo();
-props = nonEnumerablePropertiesIn( obj );
-
-console.log( props );
-// e.g., => [ 'b', 'beep', ... ]
+var obj = new Foo();
+var props = nonEnumerablePropertiesIn( obj );
+// returns [ 'b', 'beep', ... ]
 ```
 
 </section>
