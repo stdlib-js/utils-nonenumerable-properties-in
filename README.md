@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import nonEnumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nonenumerable-properties-in@deno/mod.js';
+import nonEnumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nonenumerable-properties-in@v0.2.0-deno/mod.js';
 ```
 
 #### nonEnumerablePropertiesIn( obj )
@@ -85,7 +85,7 @@ var props = nonEnumerablePropertiesIn( obj );
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
 import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@deno/mod.js';
 import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
-import nonEnumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nonenumerable-properties-in@deno/mod.js';
+import nonEnumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nonenumerable-properties-in@v0.2.0-deno/mod.js';
 
 var hasSymbols = hasSymbolSupport();
 
