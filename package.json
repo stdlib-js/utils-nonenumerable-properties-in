@@ -39,6 +39,7 @@
   "dependencies": {
     "@stdlib/assert-has-own-property": "^0.2.2",
     "@stdlib/assert-is-nonenumerable-property": "^0.1.2",
+    "@stdlib/object-ctor": "^0.2.1",
     "@stdlib/utils-get-prototype-of": "^0.2.2",
     "@stdlib/utils-property-names": "^0.2.2",
     "@stdlib/utils-property-symbols": "^0.2.2"
