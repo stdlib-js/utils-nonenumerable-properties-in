@@ -35,19 +35,32 @@ limitations under the License.
 
 > Return an array of an object's own and inherited non-enumerable property names and [symbols][@stdlib/symbol/ctor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-nonenumerable-properties-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import nonEnumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nonenumerable-properties-in@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-nonenumerable-properties-in/tags). For example,
-
-```javascript
-import nonEnumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nonenumerable-properties-in@v0.2.3-esm/index.mjs';
+var nonEnumerablePropertiesIn = require( '@stdlib/utils-nonenumerable-properties-in' );
 ```
 
 #### nonEnumerablePropertiesIn( obj )
@@ -55,7 +68,7 @@ import nonEnumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/uti
 Returns an `array` of an object's own and inherited non-enumerable property names and [symbols][@stdlib/symbol/ctor].
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+var defineProperty = require( '@stdlib/utils-define-property' );
 
 var obj = {};
 
@@ -86,16 +99,11 @@ var props = nonEnumerablePropertiesIn( obj );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@esm/index.mjs';
-import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@esm/index.mjs';
-import nonEnumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nonenumerable-properties-in@esm/index.mjs';
+```javascript
+var defineProperty = require( '@stdlib/utils-define-property' );
+var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
+var Symbol = require( '@stdlib/symbol-ctor' );
+var nonEnumerablePropertiesIn = require( '@stdlib/utils-nonenumerable-properties-in' );
 
 var hasSymbols = hasSymbolSupport();
 
@@ -139,10 +147,6 @@ if ( hasSymbols ) {
 var obj = new Foo();
 var props = nonEnumerablePropertiesIn( obj );
 // returns [ 'b', 'beep', ... ]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -175,7 +179,7 @@ var props = nonEnumerablePropertiesIn( obj );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -205,8 +209,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-nonenumerable-properties-in.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-nonenumerable-properties-in
 
-[test-image]: https://github.com/stdlib-js/utils-nonenumerable-properties-in/actions/workflows/test.yml/badge.svg?branch=v0.2.3
-[test-url]: https://github.com/stdlib-js/utils-nonenumerable-properties-in/actions/workflows/test.yml?query=branch:v0.2.3
+[test-image]: https://github.com/stdlib-js/utils-nonenumerable-properties-in/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/utils-nonenumerable-properties-in/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-nonenumerable-properties-in/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-nonenumerable-properties-in?branch=main
@@ -238,17 +242,17 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-nonenumerable-properties-in/main/LICENSE
 
-[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor/tree/esm
+[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/utils/enumerable-properties-in]: https://github.com/stdlib-js/utils-enumerable-properties-in/tree/esm
+[@stdlib/utils/enumerable-properties-in]: https://github.com/stdlib-js/utils-enumerable-properties-in
 
-[@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils-inherited-nonenumerable-properties/tree/esm
+[@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils-inherited-nonenumerable-properties
 
-[@stdlib/utils/nonenumerable-properties]: https://github.com/stdlib-js/utils-nonenumerable-properties/tree/esm
+[@stdlib/utils/nonenumerable-properties]: https://github.com/stdlib-js/utils-nonenumerable-properties
 
-[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils-properties-in/tree/esm
+[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils-properties-in
 
 <!-- </related-links> -->
 
